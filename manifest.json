@@ -1,0 +1,36 @@
+{
+  "name": "Sachinkannan G | AI & Full Stack Developer",
+  "short_name": "Sachin G",
+  "description": "Portfolio of Sachinkannan G, AI Engineer & Full Stack Developer specializing in LLM applications, Agentic Tool-Calling Systems, and RAG frameworks.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#050816",
+  "theme_color": "#050816",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "assets/image/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/image/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/image/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "assets/image/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

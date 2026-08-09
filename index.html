@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sachinkannan G | AI Engineer & Full Stack Developer</title>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <!-- FontAwesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        
+        <!-- PWA Meta Tags & Manifest -->
+        <link rel="manifest" href="manifest.json" />
+        <meta name="theme-color" content="#050816" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="Sachin G" />
+        <link rel="apple-touch-icon" href="assets/image/icon-192.png" />
+    </head>
+    <body>
+        <!-- Custom Cursor -->
+        <div class="cursor-dot" data-cursor-dot></div>
+        <div class="cursor-outline" data-cursor-outline></div>
+
+        <!-- Scroll Progress Indicator -->
+        <div class="scroll-progress-bar"></div>
+
+        <!-- Header / Navigation -->
+        <header class="navbar">
+            <div class="container nav-container">
+                <a href="#hero" class="logo">
+                    <span class="gradient-text">&lt;Sachin /&gt;</span>
+                </a>
+                <nav class="nav-links">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <button id="pwaInstallBtn" class="btn btn-sm btn-primary pwa-install-btn" style="display: none; align-self: center;">
+                        <i class="fa-solid fa-download"></i>
+                        <span>Install App</span>
+                    </button>
+                </nav>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section id="hero" class="hero-section">
+                <div class="glow-blob blob-1"></div>
+                <div class="glow-blob blob-2"></div>
+                <div class="container hero-container">
+                    <div class="hero-content">
+                        <div class="badge">
+                            <span class="pulse-dot"></span>
+                            Available for Opportunities
+                        </div>
+                        <h1 class="hero-title">
+                            Hi, I'm
+                            <span class="gradient-text">Sachinkannan G</span>
+                        </h1>
+                        <h2 class="hero-subtitle">
+                            I am a
+                            <span class="typed-text"></span>
+                            <span class="cursor">&nbsp;</span>
+                        </h2>
+                        <p class="hero-description">
+                            Specializing in building scalable LLM applications, Agentic Tool-Calling Systems, and
+                            Retrieval-Augmented Generation (RAG) solutions with modern Web Stack integration.
+                        </p>
+                        <div class="hero-cta">
+                            <a href="assets/resume.pdf" target="_blank" class="btn btn-primary ripple">
+                                <span>Download Resume</span>
+                                <i class="fa-solid fa-download"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-outline ripple">
+                                <span>Contact Me</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </a>
+                        </div>
+                        <div class="social-links hero-socials">
+                            <a href="https://github.com/Sachinkannan127/" target="_blank" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/sachin-kannan-g-3a7758326/"
+                                target="_blank"
+                                aria-label="LinkedIn"
+                            >
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:Sachinkannansekaran@gmail.com" aria-label="Email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image-wrapper">
+                        <div class="image-border-glow"></div>
+                        <div class="image-container">
+                            <img
+                                src="assets/image/proffessional_photo.jpeg"
+                                alt="Sachinkannan G"
+                                onerror="
+                                    this.src = 'https://via.placeholder.com/400x450/0f172a/6366f1?text=Sachinkannan+G'
+                                "
+                            />
+                        </div>
+                        <!-- Stats Badges -->
+                        <div class="floating-badge badge-1">
+                            <i class="fa-solid fa-bolt"></i>
+                            <div>
+                                <h4>&lt; 1.8s</h4>
+                                <p>LLM Router Latency</p>
+                            </div>
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <i class="fa-solid fa-robot"></i>
+                            <div>
+                                <h4>98.7%</h4>
+                                <p>Agent Success Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="section">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <h2 class="section-title">
+                            About
+                            <span class="gradient-text">Me</span>
+                        </h2>
+                        <p class="section-subtitle">Passionate AI Developer & Problem Solver</p>
+                    </div>
+                    <div class="about-grid">
+                        <div class="about-text glass-card reveal">
+                            <h3>Building Intelligent & Scalable AI Solutions</h3>
+                            <p>
+                                I am an AI Engineer with a background in Artificial Intelligence and Data Science
+                                (Graduating 2026) with strong foundations in Python, Generative AI, and Full-Stack
+                                Engineering.
+                            </p>
+                            <p>
+                                My expertise spans building production-grade LLM applications using
+                                <strong>FastAPI</strong>
+                                and
+                                <strong>LiteLLM</strong>
+                                , featuring multi-provider routing and autonomous agentic tool-calling systems. I
+                                possess hands-on experience developing
+                                <strong>Retrieval-Augmented Generation (RAG)</strong>
+                                frameworks backed by high-performance vector databases like ChromaDB.
+                            </p>
+                            <div class="about-info-grid">
+                                <div class="info-item">
+                                    <span class="info-title">Degree:</span>
+                                    <span class="info-value">B.Tech AI & Data Science</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-title">Location:</span>
+                                    <span class="info-value">Chennai, India</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-title">Email:</span>
+                                    <span class="info-value">Sachinkannansekaran@gmail.com</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-title">Status:</span>
+                                    <span class="info-value">Open to Full-Time / Internships</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-stats-grid">
+                            <div class="stat-card glass-card reveal delay-100">
+                                <h3 class="counter" data-target="1000">0</h3>
+                                <span class="stat-plus">+</span>
+                                <p>Code Analysis Requests Processed</p>
+                            </div>
+                            <div class="stat-card glass-card reveal delay-200">
+                                <h3 class="counter" data-target="50">0</h3>
+                                <span class="stat-plus">+</span>
+                                <p>Indexed Document Chunks</p>
+                            </div>
+                            <div class="stat-card glass-card reveal delay-300">
+                                <h3 class="counter" data-target="35">0</h3>
+                                <span class="stat-plus">%</span>
+                                <p>Reduction in Debugging Time</p>
+                            </div>
+                            <div class="stat-card glass-card reveal delay-400">
+                                <h3 class="counter" data-target="8.32">0</h3>
+                                <p>Academic CGPA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="section bg-secondary">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <h2 class="section-title">
+                            Technical
+                            <span class="gradient-text">Skills</span>
+                        </h2>
+                        <p class="section-subtitle">Technologies and frameworks I specialize in</p>
+                    </div>
+                    <div class="skills-grid">
+                        <!-- Languages -->
+                        <div class="skill-category glass-card reveal delay-100">
+                            <div class="category-header">
+                                <i class="fa-solid fa-code"></i>
+                                <h3>Programming Languages</h3>
+                            </div>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>Python</span>
+                                        <span>95%</span>
+                                    </div>
+                                    <div class="progress-line"><span style="width: 95%"></span></div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>TypeScript / JavaScript</span>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="progress-line"><span style="width: 85%"></span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Gen AI & LLMs -->
+                        <div class="skill-category glass-card reveal delay-200">
+                            <div class="category-header">
+                                <i class="fa-solid fa-robot"></i>
+                                <h3>Generative AI & LLMs</h3>
+                            </div>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>RAG Architectures & Vector Search</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="progress-line"><span style="width: 90%"></span></div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>Agentic Tool Calling & LangChain/LangGraph</span>
+                                        <span>88%</span>
+                                    </div>
+                                    <div class="progress-line"><span style="width: 88%"></span></div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>Prompt Engineering & LiteLLM</span>
+                                        <span>92%</span>
+                                    </div>
+                                    <div class="progress-line"><span style="width: 92%"></span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Frameworks -->
+                        <div class="skill-category glass-card reveal delay-300">
+                            <div class="category-header">
+                                <i class="fa-solid fa-cubes"></i>
+                                <h3>Frameworks & Web</h3>
+                            </div>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>FastAPI & REST APIs</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="progress-line"><span style="width: 90%"></span></div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>ReactJS</span>
+                                        <span>82%</span>
+                                    </div>
+                                    <div class="progress-line"><span style="width: 82%"></span></div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>Numpy & Pandas</span>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="progress-line"><span style="width: 85%"></span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Databases & Cloud -->
+                        <div class="skill-category glass-card reveal delay-400">
+                            <div class="category-header">
+                                <i class="fa-solid fa-database"></i>
+                                <h3>Databases & Vector Stores</h3>
+                            </div>
+                            <div class="skill-items">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>ChromaDB (Vector DB)</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="progress-line"><span style="width: 90%"></span></div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span>MongoDB & MySQL</span>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="progress-line"><span style="width: 85%"></span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tools & Workflow -->
+                        <div class="skill-category glass-card reveal delay-500">
+                            <div class="category-header">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                                <h3>Tools & Automation</h3>
+                            </div>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Git / GitHub</span>
+                                <span class="skill-tag">Make.com</span>
+                                <span class="skill-tag">n8n</span>
+                                <span class="skill-tag">Pabbly Connect</span>
+                                <span class="skill-tag">LangSmith</span>
+                                <span class="skill-tag">CI/CD Pipelines</span>
+                                <span class="skill-tag">HuggingFace Embeddings</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="section">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <h2 class="section-title">
+                            Work
+                            <span class="gradient-text">Experience</span>
+                        </h2>
+                        <p class="section-subtitle">My professional journey in AI and Data Science</p>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item left">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content glass-card reveal reveal-left">
+                                <span class="timeline-date">Nov 2025 - Feb 2026</span>
+                                <h3 class="timeline-role">Artificial Intelligence Intern</h3>
+                                <h4 class="timeline-company">Anapty Academy Technologies Private Limited</h4>
+                                <p class="timeline-desc">
+                                    Completed an intensive AI internship gaining deep practical mastery of Machine
+                                    Learning and Data Science architectures. Applied core concepts to engineering
+                                    end-to-end AI applications.
+                                </p>
+                                <ul class="timeline-list">
+                                    <li>
+                                        Engineered hands-on AI projects translating complex mathematical AI concepts
+                                        into practical software solutions.
+                                    </li>
+                                    <li>
+                                        Strengthened practical capabilities in model deployment, multi-model evaluation,
+                                        and automated data processing pipelines.
+                                    </li>
+                                </ul>
+                                <div class="tech-stack-badges">
+                                    <span>Python</span>
+                                    <span>Machine Learning</span>
+                                    <span>AI Development</span>
+                                    <span>Model Deployment</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item right">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content glass-card reveal reveal-right">
+                                <span class="timeline-date">Sep 2024 - Oct 2024</span>
+                                <h3 class="timeline-role">Data Science Intern</h3>
+                                <h4 class="timeline-company">Prodigy InfoTech</h4>
+                                <p class="timeline-desc">
+                                    Focused on end-to-end data pipeline processing, EDA, visualization techniques, and
+                                    insight generation from structured and unstructured raw dataset formats.
+                                </p>
+                                <ul class="timeline-list">
+                                    <li>
+                                        Executed robust data cleaning, handling missing values, transformation, and
+                                        feature engineering procedures.
+                                    </li>
+                                    <li>
+                                        Built data automation workflows using Python visualization libraries to extract
+                                        quantitative analytics.
+                                    </li>
+                                </ul>
+                                <div class="tech-stack-badges">
+                                    <span>Python</span>
+                                    <span>Pandas</span>
+                                    <span>NumPy</span>
+                                    <span>Data Visualization</span>
+                                    <span>EDA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section bg-secondary">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <h2 class="section-title">
+                            Featured
+                            <span class="gradient-text">Projects</span>
+                        </h2>
+                        <p class="section-subtitle">Production-grade AI applications and developer tools</p>
+                    </div>
+                    <div class="projects-grid">
+                        <!-- Project 1 -->
+                        <div class="project-card glass-card reveal delay-100">
+                            <div class="project-image">
+                                <div class="project-overlay">
+                                    <a
+                                        href="https://research-paper-frontend-lovat.vercel.app/"
+                                        target="_blank"
+                                        class="icon-link"
+                                    >
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                    <a href="https://github.com/Sachinkannan127/" target="_blank" class="icon-link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                                <div class="project-img-placeholder">
+                                    <i class="fa-solid fa-book-open-reader"></i>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Research Paper Assistant - RAG System</h3>
+                                <p class="project-description">
+                                    A high-performance Retrieval-Augmented Generation system enabling semantic search,
+                                    automatic PDF chunking, and source-grounded answers to eradicate AI hallucinations.
+                                </p>
+                                <div class="project-highlights">
+                                    <span>
+                                        <i class="fa-solid fa-check"></i>
+                                        Indexed 50+ Document Chunks
+                                    </span>
+                                    <span>
+                                        <i class="fa-solid fa-check"></i>
+                                        Automatic Groq/Gemini LLM Fallback
+                                    </span>
+                                    <span>
+                                        <i class="fa-solid fa-check"></i>
+                                        Response Latency &lt; 3s
+                                    </span>
+                                </div>
+                                <div class="tech-stack-badges">
+                                    <span>ReactJS</span>
+                                    <span>Python</span>
+                                    <span>FastAPI</span>
+                                    <span>MongoDB</span>
+                                    <span>Vector Embeddings</span>
+                                </div>
+                                <div class="project-links">
+                                    <a
+                                        href="https://research-paper-frontend-lovat.vercel.app/"
+                                        target="_blank"
+                                        class="btn btn-sm btn-primary"
+                                    >
+                                        Live Demo
+                                    </a>
+                                    <a
+                                        href="https://github.com/Sachinkannan127/"
+                                        target="_blank"
+                                        class="btn btn-sm btn-outline"
+                                    >
+                                        Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="project-card glass-card reveal delay-200">
+                            <div class="project-image">
+                                <div class="project-overlay">
+                                    <a href="https://github.com/Sachinkannan127/" target="_blank" class="icon-link">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                                <div class="project-img-placeholder">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">AI-Powered Coding Assistant</h3>
+                                <p class="project-description">
+                                    Intelligent web application designed to analyze codebase structures, perform instant
+                                    bug detection, optimize code, and generate contextual suggestions in real time.
+                                </p>
+                                <div class="project-highlights">
+                                    <span>
+                                        <i class="fa-solid fa-check"></i>
+                                        1,000+ Requests Processed
+                                    </span>
+                                    <span>
+                                        <i class="fa-solid fa-check"></i>
+                                        92% Bug Detection Accuracy
+                                    </span>
+                                    <span>
+                                        <i class="fa-solid fa-check"></i>
+                                        35% Debugging Time Savings
+                                    </span>
+                                </div>
+                                <div class="tech-stack-badges">
+                                    <span>ReactJS</span>
+                                    <span>Python</span>
+                                    <span>LiteLLM</span>
+                                    <span>Prompt Engineering</span>
+                                    <span>REST APIs</span>
+                                </div>
+                                <div class="project-links">
+                                    <a
+                                        href="https://github.com/Sachinkannan127/"
+                                        target="_blank"
+                                        class="btn btn-sm btn-outline"
+                                    >
+                                        <i class="fa-brands fa-github"></i>
+                                        Source Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="services" class="section">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <h2 class="section-title">
+                            Services
+                            <span class="gradient-text">I Offer</span>
+                        </h2>
+                        <p class="section-subtitle">Tailored technical solutions for modern businesses</p>
+                    </div>
+                    <div class="services-grid">
+                        <div class="service-card glass-card reveal delay-100">
+                            <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+                            <h3>RAG & LLM Integration</h3>
+                            <p>
+                                Building contextual Retrieval-Augmented Generation solutions with vector databases
+                                (ChromaDB) to ground AI responses accurately on proprietary domain data.
+                            </p>
+                        </div>
+                        <div class="service-card glass-card reveal delay-200">
+                            <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
+                            <h3>AI Agent Systems</h3>
+                            <p>
+                                Architecting autonomous agents and multi-provider fallback tools using LangChain,
+                                LangGraph, and LiteLLM for high reliability and structured tool-calling.
+                            </p>
+                        </div>
+                        <div class="service-card glass-card reveal delay-300">
+                            <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+                            <h3>FastAPI Backend APIs</h3>
+                            <p>
+                                Developing high-throughput, low-latency REST APIs with Python and FastAPI optimized for
+                                real-time model streaming and secure integrations.
+                            </p>
+                        </div>
+                        <div class="service-card glass-card reveal delay-400">
+                            <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                            <h3>Full Stack AI Web Apps</h3>
+                            <p>
+                                Designing modern, interactive single-page frontend interfaces with ReactJS integrated
+                                seamlessly with AI backends and databases.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education & Certifications Section -->
+            <section id="education" class="section bg-secondary">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <h2 class="section-title">
+                            Education &
+                            <span class="gradient-text">Certifications</span>
+                        </h2>
+                        <p class="section-subtitle">Academic foundations and professional credentials</p>
+                    </div>
+                    <div class="edu-cert-grid">
+                        <!-- Education Column -->
+                        <div class="edu-column reveal reveal-left">
+                            <h3 class="column-title">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                Academic Degree
+                            </h3>
+                            <div class="edu-card glass-card">
+                                <span class="edu-year">Oct 2022 - May 2026</span>
+                                <h3>B.Tech - Artificial Intelligence and Data Science</h3>
+                                <p class="institution">Dhanalakshmi College of Engineering (Tambaram, Chennai)</p>
+                                <div class="score-badge">
+                                    CGPA:
+                                    <strong>8.32 / 10</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Certifications Column -->
+                        <div class="cert-column reveal reveal-right">
+                            <h3 class="column-title">
+                                <i class="fa-solid fa-certificate"></i>
+                                Certifications
+                            </h3>
+                            <div class="cert-card glass-card">
+                                <div class="cert-icon"><i class="fa-brands fa-aws"></i></div>
+                                <div>
+                                    <h3>AWS Academy Cloud Foundations</h3>
+                                    <p>AWS Academy Graduate</p>
+                                    <span class="cert-badge">Verified Credential</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <h2 class="section-title">
+                            Get In
+                            <span class="gradient-text">Touch</span>
+                        </h2>
+                        <p class="section-subtitle">Let's build something extraordinary together</p>
+                    </div>
+                    <div class="contact-grid">
+                        <div class="contact-info glass-card reveal reveal-left">
+                            <h3>Contact Details</h3>
+                            <p>
+                                Feel free to reach out to me for job opportunities, AI research collaborations, or
+                                software development inquiries.
+                            </p>
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <a href="mailto:Sachinkannansekaran@gmail.com">Sachinkannansekaran@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <a href="tel:+918270220194">+91 8270220194</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Chennai, Tamil Nadu, India</p>
+                                </div>
+                            </div>
+
+                            <div class="social-links">
+                                <a href="https://github.com/Sachinkannan127/" target="_blank" aria-label="GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a
+                                    href="https://www.linkedin.com/in/sachin-kannan-g-3a7758326/"
+                                    target="_blank"
+                                    aria-label="LinkedIn"
+                                >
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <form class="contact-form glass-card reveal reveal-right" id="contactForm">
+                            <h3>Send a Message</h3>
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Your Name" required />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Your Email" required />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" placeholder="Subject" required />
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary ripple full-width">
+                                <span>Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer-container">
+                <p>&copy; 2026 Sachinkannan G. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/Sachinkannan127/" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/sachin-kannan-g-3a7758326/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scroll To Top Button -->
+        <a href="#hero" class="back-to-top" aria-label="Scroll to top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
