@@ -2,19 +2,19 @@
    CSS VARIABLES & THEME SETUP
    ========================================================================== */
 :root {
-    --bg-primary: #050816;
-    --bg-secondary: #0f172a;
-    --card-bg: rgba(255, 255, 255, 0.05);
-    --card-border: rgba(255, 255, 255, 0.08);
-    --glass-glow: rgba(99, 102, 241, 0.15);
+    --bg-primary: #030a0e;
+    --bg-secondary: #07151c;
+    --card-bg: rgba(9, 30, 36, 0.55);
+    --card-border: rgba(0, 255, 157, 0.16);
+    --glass-glow: rgba(0, 255, 157, 0.25);
 
-    --accent-1: #6366f1; /* Indigo */
-    --accent-2: #8b5cf6; /* Purple */
-    --accent-3: #06b6d4; /* Cyan */
-    --accent-4: #22c55e; /* Green */
+    --accent-1: #00ff9d; /* Neon Emerald / Electric Mint */
+    --accent-2: #00e5ff; /* Neon Cyan / Electric Teal */
+    --accent-3: #10b981; /* Deep Emerald */
+    --accent-4: #00ff9d; /* Electric Mint Accent */
 
-    --text-primary: #ffffff;
-    --text-muted: #94a3b8;
+    --text-primary: #f0fdf4; /* Crisp Mint White */
+    --text-muted: #94a3b8;  /* Slate Silver */
 
     --font-main: 'Plus Jakarta Sans', sans-serif;
     --font-code: 'Fira Code', monospace;
@@ -167,23 +167,25 @@ ul {
 
 .btn-primary {
     background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
-    color: #fff;
-    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+    color: #030a0e;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(0, 255, 157, 0.35);
 }
 
 .btn-primary:hover {
-    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
+    box-shadow: 0 6px 20px rgba(0, 255, 157, 0.6);
     transform: translateY(-2px);
 }
 
 .btn-outline {
     background: transparent;
     border: 2px solid var(--accent-1);
-    color: #fff;
+    color: var(--text-primary);
 }
 
 .btn-outline:hover {
     background: var(--accent-1);
+    color: #030a0e;
     transform: translateY(-2px);
 }
 
@@ -223,7 +225,7 @@ ul {
 }
 
 .navbar.scrolled {
-    background: rgba(5, 8, 22, 0.85);
+    background: rgba(3, 10, 14, 0.88);
     backdrop-filter: blur(15px);
     border-bottom: 1px solid var(--card-border);
     padding: 0.8rem 0;
@@ -296,13 +298,13 @@ ul {
 .blob-1 {
     top: 20%;
     left: 10%;
-    background: rgba(99, 102, 241, 0.25);
+    background: rgba(0, 255, 157, 0.22);
 }
 
 .blob-2 {
     bottom: 20%;
     right: 10%;
-    background: rgba(6, 182, 212, 0.25);
+    background: rgba(0, 229, 255, 0.22);
 }
 
 .hero-container {
@@ -318,10 +320,10 @@ ul {
     align-items: center;
     gap: 0.5rem;
     padding: 0.4rem 1rem;
-    background: rgba(34, 197, 94, 0.1);
-    border: 1px solid rgba(34, 197, 94, 0.3);
+    background: rgba(0, 255, 157, 0.1);
+    border: 1px solid rgba(0, 255, 157, 0.3);
     border-radius: 20px;
-    color: var(--accent-4);
+    color: var(--accent-1);
     font-size: 0.85rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
@@ -330,21 +332,23 @@ ul {
 .pulse-dot {
     width: 8px;
     height: 8px;
-    background-color: var(--accent-4);
+    background-color: var(--accent-1);
     border-radius: 50%;
-    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+    box-shadow: 0 0 0 0 rgba(0, 255, 157, 0.7);
     animation: pulse 1.6s infinite;
 }
 
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+        box-shadow: 0 0 0 0 rgba(0, 255, 157, 0.7);
     }
+
     70% {
-        box-shadow: 0 0 0 10px rgba(34, 197, 94, 0);
+        box-shadow: 0 0 0 10px rgba(0, 255, 157, 0);
     }
+
     100% {
-        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+        box-shadow: 0 0 0 0 rgba(0, 255, 157, 0);
     }
 }
 
@@ -395,7 +399,7 @@ ul {
 
 .hero-socials a:hover {
     background: var(--accent-1);
-    color: #fff;
+    color: #030a0e;
     transform: translateY(-3px);
 }
 
@@ -434,7 +438,7 @@ ul {
 
 .floating-badge {
     position: absolute;
-    background: rgba(15, 23, 42, 0.85);
+    background: rgba(7, 21, 28, 0.88);
     backdrop-filter: blur(10px);
     border: 1px solid var(--card-border);
     padding: 0.8rem 1.2rem;
@@ -465,6 +469,7 @@ ul {
     top: 10%;
     left: -30px;
 }
+
 .badge-2 {
     bottom: 10%;
     right: -20px;
@@ -472,10 +477,12 @@ ul {
 }
 
 @keyframes float {
+
     0%,
     100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-10px);
     }
@@ -659,6 +666,7 @@ ul {
 .timeline-item.left {
     left: 0;
 }
+
 .timeline-item.right {
     left: 50%;
 }
@@ -677,6 +685,7 @@ ul {
 .left .timeline-dot {
     right: -8px;
 }
+
 .right .timeline-dot {
     left: -8px;
 }
@@ -931,7 +940,8 @@ ul {
 
 .cert-icon {
     font-size: 2.5rem;
-    color: #ff9900; /* AWS Gold */
+    color: #ff9900;
+    /* AWS Gold */
 }
 
 .cert-card h3 {
@@ -965,7 +975,7 @@ ul {
     margin-bottom: 1rem;
 }
 
-.contact-info > p {
+.contact-info>p {
     color: var(--text-muted);
     margin-bottom: 2rem;
 }
@@ -1110,15 +1120,19 @@ ul {
 .delay-100 {
     transition-delay: 100ms;
 }
+
 .delay-200 {
     transition-delay: 200ms;
 }
+
 .delay-300 {
     transition-delay: 300ms;
 }
+
 .delay-400 {
     transition-delay: 400ms;
 }
+
 .delay-500 {
     transition-delay: 500ms;
 }
@@ -1221,7 +1235,8 @@ ul {
 
     .cursor-dot,
     .cursor-outline {
-        display: none; /* Hide custom cursor on touch devices */
+        display: none;
+        /* Hide custom cursor on touch devices */
     }
 }
 
@@ -1238,6 +1253,7 @@ ul {
     0% {
         box-shadow: 0 4px 10px rgba(99, 102, 241, 0.3);
     }
+
     100% {
         box-shadow: 0 4px 20px rgba(6, 182, 212, 0.6);
     }

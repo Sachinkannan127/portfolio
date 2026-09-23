@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
        2. TYPING EFFECT IN HERO SECTION
        ========================================================================== */
     const typedTextSpan = document.querySelector('.typed-text');
-    const textArray = ['AI Engineer', 'Full Stack Developer', 'GenAI Developer', 'FastAPI Expert'];
+    const textArray = ['AI Engineer', 'GenAI Specialist', 'RAG & Agent Developer', 'LLM & FastAPI Architect'];
     const typingDelay = 100;
     const erasingDelay = 60;
     const newTextDelay = 2000;
@@ -229,17 +229,17 @@ document.addEventListener('DOMContentLoaded', () => {
     if (installBtn) {
         installBtn.addEventListener('click', async () => {
             if (!deferredPrompt) return;
-            
+
             // Show prompt
             deferredPrompt.prompt();
-            
+
             // Wait for user choices
             const { outcome } = await deferredPrompt.userChoice;
             console.log(`[PWA] Install choice outcome: ${outcome}`);
-            
+
             // Clear deferredPrompt
             deferredPrompt = null;
-            
+
             // Hide install button
             installBtn.style.display = 'none';
         });
@@ -265,15 +265,15 @@ document.addEventListener('DOMContentLoaded', () => {
         alertBox.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
         alertBox.style.transform = 'translateY(20px)';
         alertBox.innerHTML = '<i class="fa-solid fa-circle-check" style="margin-right:8px;"></i> Thank you for installing Sachin\'s Portfolio PWA!';
-        
+
         document.body.appendChild(alertBox);
-        
+
         // Trigger reflow & animate in
         setTimeout(() => {
             alertBox.style.opacity = '1';
             alertBox.style.transform = 'translateY(0)';
         }, 100);
-        
+
         // Remove after 4 seconds
         setTimeout(() => {
             alertBox.style.opacity = '0';
