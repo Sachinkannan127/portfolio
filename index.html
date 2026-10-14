@@ -17,14 +17,25 @@
 
     <!-- PWA Meta Tags & Manifest -->
     <link rel="manifest" href="manifest.json" />
-    <meta name="theme-color" content="#050816" />
+    <meta name="theme-color" content="#030a0e" id="themeColorMeta" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Sachin G" />
     <link rel="apple-touch-icon" href="assets/image/icon-192.png" />
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('sachin-theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = savedTheme ? savedTheme : (prefersDark ? 'dark' : 'dark');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
 </head>
 
 <body>
+    <!-- Background Interactive AI Neural Network Animation Canvas -->
+    <canvas id="neuralCanvas" class="bg-neural-canvas"></canvas>
+
     <!-- Custom Cursor -->
     <div class="cursor-dot" data-cursor-dot></div>
     <div class="cursor-outline" data-cursor-outline></div>
@@ -36,7 +47,7 @@
     <header class="navbar">
         <div class="container nav-container">
             <a href="#hero" class="logo">
-                <span class="gradient-text">&lt;Sachin /&gt;</span>
+                <span class="gradient-text">&lt;Portfolio&gt;</span>
             </a>
             <nav class="nav-links">
                 <a href="#about" class="nav-link">About</a>
@@ -52,10 +63,20 @@
                     <span>Install App</span>
                 </button>
             </nav>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="nav-actions">
+                <button id="themeToggleBtn" class="theme-toggle" aria-label="Toggle Dark and Light Mode" role="switch"
+                    aria-checked="false" title="Switch Theme">
+                    <span class="theme-toggle-track">
+                        <span class="theme-toggle-icon sun" title="Light Mode"><i class="fa-solid fa-sun"></i></span>
+                        <span class="theme-toggle-icon moon" title="Dark Mode"><i class="fa-solid fa-moon"></i></span>
+                        <span class="theme-toggle-thumb"></span>
+                    </span>
+                </button>
+                <div class="hamburger" aria-label="Open Navigation Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </header>
@@ -63,8 +84,6 @@
     <main>
         <!-- Hero Section -->
         <section id="hero" class="hero-section">
-            <div class="glow-blob blob-1"></div>
-            <div class="glow-blob blob-2"></div>
             <div class="container hero-container">
                 <div class="hero-content">
                     <div class="badge">
@@ -108,7 +127,6 @@
                     </div>
                 </div>
                 <div class="hero-image-wrapper">
-                    <div class="image-border-glow"></div>
                     <div class="image-container">
                         <img src="assets/image/proffessional_photo.jpeg" alt="Sachinkannan G" onerror="
                                     this.src = 'https://via.placeholder.com/400x450/0f172a/6366f1?text=Sachinkannan+G'
